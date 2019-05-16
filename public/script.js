@@ -1,5 +1,5 @@
 function handleClick() {
-    console.log(" button click successful!")
+    console.log("button click successful!")
 
     const input = document.getElementById("input").value;
 
@@ -12,7 +12,7 @@ function handleClick() {
                     const returnedData = res.data[0].word
                     document.getElementById('results').innerHTML = returnedData + " word exists"
                 } else {
-                    document.getElementById('results').innerHTML = "word does not exist"
+                    document.getElementById('results').innerHTML = " word does not exist"
                 }
         })
 }
