@@ -10,9 +10,9 @@ function handleClick() {
             console.log(res)
                 if (res.data.length > 0) {
                     const returnedData = res.data[0].word
-                    document.getElementById('results').innerHTML = returnedData + " word exists"
+                    document.getElementById('results').innerHTML = "<h2 id='goodResult'>The word " + returnedData +  " exists</h2>"
                 } else {
-                    document.getElementById('results').innerHTML = " word does not exist"
+                    document.getElementById('results').innerHTML = "<h2 id='badResult'>The word does not exist</h2>"
                 }
         })
 }
